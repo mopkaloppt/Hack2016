@@ -16,6 +16,9 @@
 
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,6 +26,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- React -->
+     <!-- <script src="https://fb.me/react-0.14.7.min.js"
+        integrity="sha384-zTm/dblzLXQNp3CgY+hfaC/WJ6h4XtNrePh2CW2+rO9GPuNiPb9jmthvAL+oI/dQ"
+        crossorigin="anonymous"></script>
+    <script src="https://fb.me/react-dom-0.14.7.min.js"
+        integrity="sha384-ntqCsHbLdMxT352UbhPbT7fqjE8xi4jLmQYQa8mYR+ylAapbXRfdsDweueDObf7m"
+        crossorigin="anonymous"></script>
+     -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js">
+   </script> 
 
 </head>
 
@@ -53,10 +67,10 @@
                     </li>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -67,33 +81,26 @@
 
     <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-       <!--  <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
- -->
+
         <!-- Wrapper for Slides -->
         <div class="carousel-inner"> 
-            <script type="text/babel" src="js/gifhandler.js"></script>
+            
             <!-- testing vid1 -->
             <div class="item active">
-                <video autoplay loop>
-                    <source src="resources/video-1456635980.mp4" width="1024" height="552" type="video/mp4"> 
+                <video id="1">
+                    <source src="resources/video1.mp4" width="1024" height="552" type="video/mp4"> 
                 </video>
             </div>
             <!-- testing vid2 -->
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <video autoplay loop>
-                    <source src="resources/video-1456636532.mp4" width="1024" height="552" type="video/mp4"> 
+                <video id="2">
+                    <source src="resources/video2.mp4" width="1024" height="552" type="video/mp4"> 
                 </video>       
             </div>
              <!-- testing vid3 -->
             <div class="item">
-                <video autoplay loop>
-                    <source src="resources/video-1456637093.mp4" width="1024" height="552" type="video/mp4"> 
+                <video id="3">
+                    <source src="resources/video3.mp4" width="1024" height="552" type="video/mp4"> 
                 </video> 
             </div>
         </div>
@@ -118,7 +125,6 @@
                 <p>timestamp</p>
 
             </div>
-        </div>
 
         <hr>
 
@@ -141,12 +147,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 3000 //changes the speed
-    })
-    </script>
+    <!-- Script to Activate the Carousel with Video -->
+    <script src="js/vidhandler.js"></script>
+   
 
 </body>
 
